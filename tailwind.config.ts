@@ -63,43 +63,43 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Forest theme colors
+				// Forest theme colors using CSS variables
 				forest: {
-					50: '#f0fdf4',
-					100: '#dcfce7',
-					200: '#bbf7d0',
-					300: '#86efac',
-					400: '#4ade80',
-					500: '#22c55e',
-					600: '#16a34a',
-					700: '#15803d',
-					800: '#166534',
-					900: '#14532d',
-					950: '#0F4A3C'
+					50: 'hsl(var(--forest-50))',
+					100: 'hsl(var(--forest-100))',
+					200: 'hsl(var(--forest-200))',
+					300: 'hsl(var(--forest-300))',
+					400: 'hsl(var(--forest-400))',
+					500: 'hsl(var(--forest-500))',
+					600: 'hsl(var(--forest-600))',
+					700: 'hsl(var(--forest-700))',
+					800: 'hsl(var(--forest-800))',
+					900: 'hsl(var(--forest-900))',
+					950: 'hsl(var(--forest-950))'
 				},
 				earth: {
-					50: '#fdf8f6',
-					100: '#f2e8e5',
-					200: '#eaddd7',
-					300: '#e0cec7',
-					400: '#d2bab0',
-					500: '#bfa094',
-					600: '#a18072',
-					700: '#977669',
-					800: '#8B4513',
-					900: '#A0522D'
+					50: 'hsl(var(--earth-50))',
+					100: 'hsl(var(--earth-100))',
+					200: 'hsl(var(--earth-200))',
+					300: 'hsl(var(--earth-300))',
+					400: 'hsl(var(--earth-400))',
+					500: 'hsl(var(--earth-500))',
+					600: 'hsl(var(--earth-600))',
+					700: 'hsl(var(--earth-700))',
+					800: 'hsl(var(--earth-800))',
+					900: 'hsl(var(--earth-900))'
 				},
 				fire: {
-					50: '#fff7ed',
-					100: '#ffedd5',
-					200: '#fed7aa',
-					300: '#fdba74',
-					400: '#fb923c',
-					500: '#FF6B35',
-					600: '#ea580c',
-					700: '#c2410c',
-					800: '#9a3412',
-					900: '#7c2d12'
+					50: 'hsl(var(--fire-50))',
+					100: 'hsl(var(--fire-100))',
+					200: 'hsl(var(--fire-200))',
+					300: 'hsl(var(--fire-300))',
+					400: 'hsl(var(--fire-400))',
+					500: 'hsl(var(--fire-500))',
+					600: 'hsl(var(--fire-600))',
+					700: 'hsl(var(--fire-700))',
+					800: 'hsl(var(--fire-800))',
+					900: 'hsl(var(--fire-900))'
 				}
 			},
 			borderRadius: {

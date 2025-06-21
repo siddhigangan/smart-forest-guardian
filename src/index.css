@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -15,8 +16,8 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 142 76% 36%;
+    --primary-foreground: 355.7 100% 97.3%;
 
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
@@ -32,63 +33,131 @@
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --ring: 142 76% 36%;
 
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Forest theme variables for light mode */
+    --forest-50: 120 60% 97%;
+    --forest-100: 120 60% 93%;
+    --forest-200: 120 60% 85%;
+    --forest-300: 120 60% 73%;
+    --forest-400: 120 60% 56%;
+    --forest-500: 142 76% 36%;
+    --forest-600: 142 72% 29%;
+    --forest-700: 142 64% 24%;
+    --forest-800: 142 55% 20%;
+    --forest-900: 142 61% 13%;
+    --forest-950: 148 80% 8%;
+
+    /* Fire theme variables */
+    --fire-50: 33 100% 96%;
+    --fire-100: 34 100% 92%;
+    --fire-200: 32 98% 83%;
+    --fire-300: 31 97% 72%;
+    --fire-400: 27 96% 61%;
+    --fire-500: 25 95% 53%;
+    --fire-600: 21 90% 48%;
+    --fire-700: 17 88% 40%;
+    --fire-800: 15 79% 34%;
+    --fire-900: 15 75% 28%;
+
+    /* Earth theme variables */
+    --earth-50: 24 33% 97%;
+    --earth-100: 24 28% 95%;
+    --earth-200: 24 25% 89%;
+    --earth-300: 24 25% 82%;
+    --earth-400: 24 24% 71%;
+    --earth-500: 24 20% 58%;
+    --earth-600: 24 17% 46%;
+    --earth-700: 24 16% 37%;
+    --earth-800: 24 12% 29%;
+    --earth-900: 24 9% 23%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 142 61% 8%;
+    --foreground: 120 60% 97%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 142 50% 10%;
+    --card-foreground: 120 60% 97%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 142 50% 10%;
+    --popover-foreground: 120 60% 97%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 142 76% 36%;
+    --primary-foreground: 142 61% 8%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 142 30% 15%;
+    --secondary-foreground: 120 60% 97%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 142 30% 15%;
+    --muted-foreground: 120 20% 65%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 142 30% 15%;
+    --accent-foreground: 120 60% 97%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
+    --border: 142 30% 18%;
+    --input: 142 30% 18%;
+    --ring: 142 76% 36%;
+
+    --sidebar-background: 142 50% 6%;
+    --sidebar-foreground: 120 20% 85%;
+    --sidebar-primary: 142 76% 36%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-accent: 142 30% 12%;
+    --sidebar-accent-foreground: 120 20% 85%;
+    --sidebar-border: 142 30% 12%;
+    --sidebar-ring: 142 76% 36%;
+
+    /* Forest theme variables for dark mode */
+    --forest-50: 142 30% 12%;
+    --forest-100: 142 30% 15%;
+    --forest-200: 142 30% 18%;
+    --forest-300: 142 30% 25%;
+    --forest-400: 142 40% 35%;
+    --forest-500: 142 76% 36%;
+    --forest-600: 142 60% 45%;
+    --forest-700: 142 60% 55%;
+    --forest-800: 142 55% 65%;
+    --forest-900: 142 50% 75%;
+    --forest-950: 120 60% 93%;
+
+    /* Fire theme variables for dark mode */
+    --fire-50: 15 75% 15%;
+    --fire-100: 15 79% 20%;
+    --fire-200: 17 88% 25%;
+    --fire-300: 21 90% 35%;
+    --fire-400: 25 95% 45%;
+    --fire-500: 25 95% 53%;
+    --fire-600: 27 96% 61%;
+    --fire-700: 31 97% 72%;
+    --fire-800: 32 98% 83%;
+    --fire-900: 34 100% 92%;
+
+    /* Earth theme variables for dark mode */
+    --earth-50: 24 9% 15%;
+    --earth-100: 24 12% 20%;
+    --earth-200: 24 16% 25%;
+    --earth-300: 24 17% 35%;
+    --earth-400: 24 20% 45%;
+    --earth-500: 24 20% 58%;
+    --earth-600: 24 24% 71%;
+    --earth-700: 24 25% 82%;
+    --earth-800: 24 25% 89%;
+    --earth-900: 24 28% 95%;
   }
 }
 
@@ -99,5 +168,12 @@
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+/* Theme-aware animations */
+@layer utilities {
+  .theme-transition {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
   }
 }

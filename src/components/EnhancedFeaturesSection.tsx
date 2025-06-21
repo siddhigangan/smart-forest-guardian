@@ -29,7 +29,7 @@ const EnhancedFeaturesSection = () => {
       title: 'Real-time Satellite Monitoring',
       description: 'NASA FIRMS integration for instant fire detection with 90%+ accuracy',
       badge: 'Live',
-      color: 'bg-fire-500',
+      color: 'bg-destructive',
       link: '/map'
     },
     {
@@ -37,7 +37,7 @@ const EnhancedFeaturesSection = () => {
       title: 'Wildlife Tracking System',
       description: 'AI-powered animal monitoring with GPS collar integration',
       badge: 'Active',
-      color: 'bg-forest-500',
+      color: 'bg-primary',
       link: '/map'
     },
     {
@@ -45,7 +45,7 @@ const EnhancedFeaturesSection = () => {
       title: 'Threat Reporting Hub',
       description: 'Community-driven incident reporting with photo verification',
       badge: 'Community',
-      color: 'bg-earth-500',
+      color: 'bg-secondary',
       link: '/report'
     },
     {
@@ -53,7 +53,7 @@ const EnhancedFeaturesSection = () => {
       title: 'Interactive Forest Map',
       description: 'Google Maps-style interface with multi-layer visualization',
       badge: 'New',
-      color: 'bg-forest-600',
+      color: 'bg-primary',
       link: '/map'
     },
     {
@@ -82,15 +82,15 @@ const EnhancedFeaturesSection = () => {
   ];
 
   return (
-    <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-earth-900/20 to-forest-900/40">
+    <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-background to-muted/50 theme-transition">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
-          <Badge className="mb-4 bg-forest-600 text-white">Advanced Technology</Badge>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+          <Badge className="mb-4 bg-primary text-primary-foreground">Advanced Technology</Badge>
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             Protecting Forests with Smart Technology
           </h2>
-          <p className="text-xl text-forest-200 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Comprehensive forest monitoring platform combining satellite imagery, AI analytics, 
             and community engagement for effective conservation.
           </p>
@@ -101,12 +101,12 @@ const EnhancedFeaturesSection = () => {
           {stats.map((stat, index) => {
             const Icon = stat.icon;
             return (
-              <Card key={index} className="bg-white/10 backdrop-blur-sm border-forest-700 text-center">
+              <Card key={index} className="bg-card/50 backdrop-blur-sm border-border text-center theme-transition hover:bg-card/70">
                 <CardContent className="p-6">
-                  <Icon className="h-8 w-8 text-forest-400 mx-auto mb-3" />
-                  <div className="text-2xl font-bold text-white mb-1">{stat.value}</div>
-                  <div className="text-sm text-forest-300">{stat.label}</div>
-                  <Badge variant="outline" className="mt-2 text-xs border-forest-600 text-forest-300">
+                  <Icon className="h-8 w-8 text-primary mx-auto mb-3" />
+                  <div className="text-2xl font-bold text-foreground mb-1">{stat.value}</div>
+                  <div className="text-sm text-muted-foreground">{stat.label}</div>
+                  <Badge variant="outline" className="mt-2 text-xs border-border text-muted-foreground">
                     {stat.unit}
                   </Badge>
                 </CardContent>
@@ -120,20 +120,20 @@ const EnhancedFeaturesSection = () => {
           {features.map((feature, index) => {
             const Icon = feature.icon;
             return (
-              <Card key={index} className="bg-white/10 backdrop-blur-sm border-forest-700 hover:bg-white/15 transition-all duration-300 group">
+              <Card key={index} className="bg-card/50 backdrop-blur-sm border-border hover:bg-card/70 transition-all duration-300 group theme-transition">
                 <CardHeader>
                   <div className="flex items-center justify-between mb-4">
                     <div className={`p-3 rounded-full ${feature.color}/20`}>
-                      <Icon className={`h-6 w-6 text-white`} />
+                      <Icon className={`h-6 w-6 text-foreground`} />
                     </div>
                     <Badge className={`${feature.color} text-white`}>
                       {feature.badge}
                     </Badge>
                   </div>
-                  <CardTitle className="text-white text-xl group-hover:text-forest-300 transition-colors">
+                  <CardTitle className="text-foreground text-xl group-hover:text-primary transition-colors">
                     {feature.title}
                   </CardTitle>
-                  <CardDescription className="text-forest-300">
+                  <CardDescription className="text-muted-foreground">
                     {feature.description}
                   </CardDescription>
                 </CardHeader>
@@ -142,7 +142,7 @@ const EnhancedFeaturesSection = () => {
                     <Button 
                       variant="outline" 
                       size="sm" 
-                      className="w-full border-forest-600 text-forest-300 hover:bg-forest-800 hover:text-white"
+                      className="w-full border-border text-muted-foreground hover:bg-accent hover:text-foreground theme-transition"
                     >
                       Explore Feature
                     </Button>
@@ -155,25 +155,25 @@ const EnhancedFeaturesSection = () => {
 
         {/* CTA Section */}
         <div className="text-center">
-          <Card className="bg-gradient-to-r from-forest-800/50 to-earth-800/50 backdrop-blur-sm border-forest-600 p-8">
+          <Card className="bg-gradient-to-r from-card/80 to-muted/80 backdrop-blur-sm border-border p-8 theme-transition">
             <CardContent className="space-y-6">
-              <Shield className="h-16 w-16 text-forest-400 mx-auto" />
-              <h3 className="text-3xl font-bold text-white">
+              <Shield className="h-16 w-16 text-primary mx-auto" />
+              <h3 className="text-3xl font-bold text-foreground">
                 Join the Forest Protection Mission
               </h3>
-              <p className="text-forest-200 max-w-2xl mx-auto">
+              <p className="text-muted-foreground max-w-2xl mx-auto">
                 Be part of a global network protecting our forests. Access real-time monitoring tools, 
                 contribute to conservation efforts, and help preserve nature for future generations.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link to="/map">
-                  <Button size="lg" className="bg-forest-600 hover:bg-forest-700 text-white">
+                  <Button size="lg" className="theme-transition">
                     <MapPin className="mr-2 h-5 w-5" />
                     Explore Live Map
                   </Button>
                 </Link>
                 <Link to="/report">
-                  <Button size="lg" variant="outline" className="border-forest-600 text-forest-300 hover:bg-forest-800">
+                  <Button size="lg" variant="outline" className="border-border text-muted-foreground hover:bg-accent theme-transition">
                     <AlertTriangle className="mr-2 h-5 w-5" />
                     Report an Issue
                   </Button>

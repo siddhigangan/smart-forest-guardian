@@ -7,15 +7,15 @@ const LanguageToggle = () => {
   const { language, setLanguage } = useLanguage();
 
   return (
-    <div className="flex items-center space-x-2 bg-white/10 backdrop-blur-sm rounded-full p-1">
+    <div className="flex items-center space-x-2 bg-muted/50 backdrop-blur-sm rounded-full p-1 theme-transition">
       <Button
         variant={language === 'en' ? 'default' : 'ghost'}
         size="sm"
         onClick={() => setLanguage('en')}
-        className={`rounded-full px-3 py-1 text-xs ${
+        className={`rounded-full px-3 py-1 text-xs theme-transition ${
           language === 'en' 
-            ? 'bg-white text-forest-900 hover:bg-white/90' 
-            : 'text-white hover:bg-white/10'
+            ? 'bg-primary text-primary-foreground hover:bg-primary/90' 
+            : 'text-muted-foreground hover:text-foreground hover:bg-accent'
         }`}
       >
         EN
@@ -24,10 +24,10 @@ const LanguageToggle = () => {
         variant={language === 'hi' ? 'default' : 'ghost'}
         size="sm"
         onClick={() => setLanguage('hi')}
-        className={`rounded-full px-3 py-1 text-xs ${
+        className={`rounded-full px-3 py-1 text-xs theme-transition ${
           language === 'hi' 
-            ? 'bg-white text-forest-900 hover:bg-white/90' 
-            : 'text-white hover:bg-white/10'
+            ? 'bg-primary text-primary-foreground hover:bg-primary/90' 
+            : 'text-muted-foreground hover:text-foreground hover:bg-accent'
         }`}
       >
         हिं
