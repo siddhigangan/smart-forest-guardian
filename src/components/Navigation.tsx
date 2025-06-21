@@ -12,7 +12,7 @@ const Navigation = () => {
 
   const navItems = [
     { to: '/', label: t('nav.home'), icon: TreePine },
-    { to: '/dashboard', label: t('nav.map'), icon: Map },
+    { to: '/map', label: t('nav.map'), icon: Map },
     { to: '/report', label: t('nav.report'), icon: AlertTriangle },
     { to: '/login', label: t('nav.login'), icon: User },
   ];

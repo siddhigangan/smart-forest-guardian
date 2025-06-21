@@ -2,14 +2,14 @@
 import React from 'react';
 import Navigation from '@/components/Navigation';
 import HeroSection from '@/components/HeroSection';
-import FeaturesSection from '@/components/FeaturesSection';
+import EnhancedFeaturesSection from '@/components/EnhancedFeaturesSection';
 
 const Index = () => {
   return (
     <div className="min-h-screen">
       <Navigation />
       <HeroSection />
-      <FeaturesSection />
+      <EnhancedFeaturesSection />
     </div>
   );
 };

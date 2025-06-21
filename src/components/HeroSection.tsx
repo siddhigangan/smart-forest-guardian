@@ -42,7 +42,7 @@ const HeroSection = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-            <Link to="/dashboard">
+            <Link to="/map">
               <Button 
                 size="lg" 
                 className="bg-forest-600 hover:bg-forest-700 text-white px-8 py-4 text-lg font-medium rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
